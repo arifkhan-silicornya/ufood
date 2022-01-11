@@ -27,6 +27,9 @@
     <li>Profile Update</li>
 </ul>
 
+<h3>Using Technology</h3>
+<p>Html / Css / Javascript / Laravel / MySql</p>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
