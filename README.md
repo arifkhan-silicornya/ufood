@@ -34,7 +34,7 @@
 
 <div style="display:'flex';">
     <img src="Screenshot.png" width="200" height="100" />
-    <img src="Screenshot_2_.png" width="200" height="100" />
+    <img src="Screenshot_2.png" width="200" height="100" />
     <img src="Screenshot_3.png" width="200" height="100" />
     <img src="user-profile.png" width="200" height="100" />
     <img src="user-transaction-history.png" width="200" height="100" />
