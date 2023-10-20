@@ -17,3 +17,4 @@
 <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/ufood.css?v=1.2.0')}}" type="text/css">
 <link rel="stylesheet" href="{{asset('css/custom/style.css')}}" type="text/css">
+<link rel="stylesheet" href="{{asset('boxicons/css/boxicons.min.css')}}" type="text/css">

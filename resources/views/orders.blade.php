@@ -145,8 +145,8 @@
                                 <img src="{{ asset('img/products/'.$products->pro_img_name)}}" alt="image" height="40" width="40" style="height:40px!important;">
                                 <span>{{ $products->pro_name }} : - {{ $products->pro_details }}</span>
                             </td>
-                            <td>{{ $details->quantity }} x {{ $details->price }} tk</td>
-                            <td>{{ $details->total_price }} tk</td>
+                            <td>{{ $details->quantity }} x {{ $details->price }} ZL</td>
+                            <td>{{ $details->total_price }} ZL</td>
                         </tr>
                     </tbody>
 @endforeach
@@ -159,11 +159,11 @@
                         <tr class="d-flex justify-content-between">
                             <td>Status : <button class="btn btn-danger btn-sm text-capitalize">{{ $row->status }}</button></td>
                             @if ($row->status == 'pending')
-                                <td> <span class="font-weight-bold ">Total Price : {{ $row->total_Price }} tk</span>  <button data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-danger ml-3">Make Payment</button></td>
+                                <td> <span class="font-weight-bold ">Total Price : {{ $row->total_Price }} ZL</span>  <button data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-outline-danger ml-3">Make Payment</button></td>
                             @elseif ($row->status == 'processing')
-                                <td> <span class="font-weight-bold ">Total Price : {{ $row->total_Price }} tk</span>  <a href="{{ url('/markDelivered?orderID='.$row->id) }}" class="btn btn-outline-success ml-3">Mark as Delivered</a></td>
+                                <td> <span class="font-weight-bold ">Total Price : {{ $row->total_Price }} ZL</span>  <a href="{{ url('/markDelivered?orderID='.$row->id) }}" class="btn btn-outline-success ml-3">Mark as Delivered</a></td>
                             @else
-                                <td> <span class="font-weight-bold ">Total Price : {{ $row->total_Price }} tk</span>  </td>
+                                <td> <span class="font-weight-bold ">Total Price : {{ $row->total_Price }} ZL</span>  </td>
                             @endif
 
 

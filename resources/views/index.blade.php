@@ -33,7 +33,7 @@
                   <img class="card-img-top img-fluid" src="{{ asset('img/products/'.$row->pro_img_name.'')}}" alt="Card image cap" height="200" width="320" style="height:200px!important;">
                   <div class="card-body">
                     <h2 class="card-title">{{ $row->pro_name }}</h2>
-                    <h3 class="card-text">{{ $row->pro_price }} TK</h3>
+                    <h3 class="card-text">{{ $row->pro_price }} ZL</h3>
                     <h5 class="card-text">Stock: {{ $row->pro_quantity }} pc</h5>
                     <p class="card-text">{{ $row->pro_details }}</p>
                     @if (session()->has(md5('ufoodUser')))
@@ -76,7 +76,7 @@
                         <img class="card-img-top img-fluid" src="{{ asset('img/products/'.$row->pro_img_name.'')}}" alt="Card image cap" height="200" width="320" style="height:200px!important;">
                         <div class="card-body">
                           <h2 class="card-title">{{ $row->pro_name }}</h2>
-                          <h3 class="card-text">{{ $row->pro_price }} TK</h3>
+                          <h3 class="card-text">{{ $row->pro_price }} ZL</h3>
                           <h5 class="card-text">Stock: {{ $row->pro_quantity }} pc</h5>
                           <p class="card-text">{{ $row->pro_details }}</p>
                           @if (session()->has(md5('ufoodUser')))
@@ -122,7 +122,7 @@
                         <img class="card-img-top img-fluid" src="{{ asset('img/products/'.$row->pro_img_name.'')}}" alt="Card image cap" height="200" width="320" style="height:200px!important;">
                         <div class="card-body">
                           <h2 class="card-title">{{ $row->pro_name }}</h2>
-                          <h3 class="card-text">{{ $row->pro_price }} TK</h3>
+                          <h3 class="card-text">{{ $row->pro_price }} ZL</h3>
                           <h5 class="card-text">Stock: {{ $row->pro_quantity }} pc</h5>
                           <p class="card-text">{{ $row->pro_details }}</p>
                           @if (session()->has(md5('ufoodUser')))
@@ -167,7 +167,7 @@
                         <img class="card-img-top img-fluid" src="{{ asset('img/products/'.$row->pro_img_name.'')}}" alt="Card image cap" height="200" width="320" style="height:200px!important;">
                         <div class="card-body">
                           <h2 class="card-title">{{ $row->pro_name }}</h2>
-                          <h3 class="card-text">{{ $row->pro_price }} TK</h3>
+                          <h3 class="card-text">{{ $row->pro_price }} ZL</h3>
                           <h5 class="card-text">Stock: {{ $row->pro_quantity }} pc</h5>
                           <p class="card-text">{{ $row->pro_details }}</p>
                           @if (session()->has(md5('ufoodUser')))
@@ -213,7 +213,7 @@
                         <img class="card-img-top img-fluid" src="{{ asset('img/products/'.$row->pro_img_name.'')}}" alt="Card image cap" height="200" width="320" style="height:200px!important;">
                         <div class="card-body">
                           <h2 class="card-title">{{ $row->pro_name }}</h2>
-                          <h3 class="card-text">{{ $row->pro_price }} TK</h3>
+                          <h3 class="card-text">{{ $row->pro_price }} ZL</h3>
                           <h5 class="card-text">Stock: {{ $row->pro_quantity }} pc</h5>
                           <p class="card-text">{{ $row->pro_details }}</p>
                           @if (session()->has(md5('ufoodUser')))
@@ -252,23 +252,8 @@
   <!-- uFood Scripts -->
   <!-- Core -->
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
 
-  <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/js-cookie/js.cookie.js') }}"></script>
-  <script src="{{ asset('vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-  <script src="{{ asset('vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
-  <!-- Optional JS -->
-  <script src="{{ asset('vendor/chart.js/dist/Chart.min.js') }}"></script>
-  <script src="{{ asset('vendor/chart.js/dist/Chart.extension.js') }}"></script>
-  <!-- uFood JS -->
-  <script src="{{ asset('js/ufood.js?v=1.2.0') }}"></script>
-
-  <script>
-
-
-  </script>
 </body>
 
 </html>

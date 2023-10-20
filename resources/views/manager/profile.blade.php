@@ -169,7 +169,7 @@
                     {{ $managr->manager_name }}
                 </h5>
                 <div>{{ $versity->instituteName }}</div>
-                <div class="h5 font-weight-700">Dhaka, Bangladesh</div>
+                <div class="h5 font-weight-700">Poland</div>
 
               </div>
             </div>
@@ -242,7 +242,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">Phone</label>
-                        <input id="input-address" class="form-control" placeholder="Phone Number" type="number" min="999999999" required value="{{ $managr->phone  }}" name="phone">
+                        <input id="input-address" class="form-control" placeholder="Phone Number" type="number" required value="{{ $managr->phone  }}" name="phone">
                       </div>
                     </div>
                   </div>
@@ -272,37 +272,11 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="" class="font-weight-bold ml-1" target="">uFood</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-              <li class="nav-item">
-                <a href="" class="nav-link" target="_blank">About Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      {{ View::make('manager.footer') }}
       </footer>
     </div>
   </div>
-  <!-- uFood Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-  <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/js-cookie/js.cookie.js') }}"></script>
-  <script src="{{ asset('vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-  <script src="{{ asset('vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
-  <!-- Optional JS -->
-  <script src="{{ asset('vendor/chart.js/dist/Chart.min.js') }}"></script>
-  <script src="{{ asset('vendor/chart.js/dist/Chart.extension.js') }}"></script>
-  <!-- uFood JS -->
-  <script src="{{ asset('js/ufood.js?v=1.2.0') }}"></script>
+  
 </body>
 
 </html>

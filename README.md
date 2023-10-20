@@ -30,8 +30,24 @@
 <h3>Using Technology</h3>
 <p>Html / Css / Javascript / Laravel / MySql</p>
 
+# some pictures
 
+<div style="display:'flex';">
+    <img src="Screenshot.png" width="200" height="100" />
+    <img src="Screenshot_2_.png" width="200" height="100" />
+    <img src="Screenshot_3.png" width="200" height="100" />
+    <img src="user-profile.png" width="200" height="100" />
+    <img src="user-transaction-history.png" width="200" height="100" />
+</div>
 
+# if you wish to run locally
+
+1. copy code : git clone https://github.com/arifkhan-silicornya/ufood.git
+2. Add Mail username and Password in .env file.
+3. create database and set the database in .env file.
+4. import database from prev-data/ufood
+5. run comman php artisan serve.
+6. open your local server : http://127.0.0.1:8000
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

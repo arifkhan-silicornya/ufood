@@ -103,7 +103,7 @@
                   </div>
                 </div>
                 <div class="custom-control custom-checkbox pl-0">
-                    <input type="checkbox" class="" id="customCheck1" required>
+                    <input type="checkbox" class="" id="customCheck1" >
                     <label class="" for="customCheck1">Remember me</label>
                 </div>
                 <div class="text-center">

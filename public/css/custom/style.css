@@ -36,4 +36,10 @@
     content: "✖";
   }
 
-
+/* 
+  #dropdownMenuLink1{
+    position: fixed!important;
+    right: 0!important;
+    top: 30%!important;
+    z-index: 1000000!important;
+  } */

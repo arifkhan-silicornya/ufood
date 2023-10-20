@@ -113,38 +113,10 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="" class="font-weight-bold ml-1" target="">ufood</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-              <li class="nav-item">
-                <a href="" class="nav-link" target="">About </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      {{ View::make('manager.footer') }}
     </div>
   </div>
-  <!-- uFood Scripts -->
-  <!-- Core -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-  <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/js-cookie/js.cookie.js') }}"></script>
-  <script src="{{ asset('vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-  <script src="{{ asset('vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
-  <!-- Optional JS -->
-  <script src="{{ asset('vendor/chart.js/dist/Chart.min.js') }}"></script>
-  <script src="{{ asset('vendor/chart.js/dist/Chart.extension.js') }}"></script>
-  <!-- uFood JS -->
-  <script src="{{ asset('js/ufood.js?v=1.2.0') }}"></script>
+  
 </body>
 
 </html>

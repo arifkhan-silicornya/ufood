@@ -123,19 +123,6 @@
 
     </div>
   </div>
-  <!-- uFood Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-  <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/js-cookie/js.cookie.js') }}"></script>
-  <script src="{{ asset('vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-  <script src="{{ asset('vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
-  <!-- Optional JS -->
-  <script src="{{ asset('vendor/chart.js/dist/Chart.min.js') }}"></script>
-  <script src="{{ asset('vendor/chart.js/dist/Chart.extension.js') }}"></script>
-  <!-- uFood JS -->
-  <script src="{{ asset('js/ufood.js?v=1.2.0') }}"></script>
 </body>
 
 </html>

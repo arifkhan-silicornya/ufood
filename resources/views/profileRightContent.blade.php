@@ -158,10 +158,7 @@
             {{ Session::get(md5('ufoodUser'))['name'] }}<span class="font-weight-light"></span>
           </h5>
           <div class="h5 font-weight-300">
-            <i class="ni location_pin mr-2"></i>Dhaka, Bangladesh
-          </div>
-          <div class="d-none">
-            <i class="ni education_hat mr-2 "></i>City University of Bangladesh
+            <i class="ni location_pin mr-2"></i>Poland
           </div>
         </div>
       </div>

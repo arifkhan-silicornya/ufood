@@ -1,6 +1,8 @@
 @php
-    $admin = DB::table('admin')->get();
+    $a = Session::get(md5('admin'));
+    $admin = DB::table('admin')->where(['userName'=>$a->userName])->get();
     $users = DB::table('users')->get();
+    
 @endphp
 <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
     <div class="container-fluid">

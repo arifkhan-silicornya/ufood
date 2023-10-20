@@ -1,5 +1,6 @@
 @php
-    $admin = DB::table('admin')->get();
+    $a = Session::get(md5('admin'));
+    $admin = DB::table('admin')->where(['userName'=>$a->userName])->get();
 @endphp
 <!DOCTYPE html>
 <html>
@@ -156,7 +157,7 @@
                   @endforeach
                 </h5>
                 <div class="h5 font-weight-900">
-                  <i class="ni location_pin mr-2"></i>Dhaka, Bangladesh
+                  <i class="ni location_pin mr-2"></i>Poland
                 </div>
               </div>
             </div>
@@ -188,6 +189,7 @@
                         <label class="form-control-label" for="input-username">Username</label>
                         @foreach ($admin as $adminProfile )
                         <input type="text" id="input-username" class="form-control" placeholder="Username" value="{{ $adminProfile->userName }}" name="adminName">
+                        <input type="text" class="d-none" placeholder="Username" value="{{ $adminProfile->userName }}" name="prevName">
                         @endforeach
                       </div>
                     </div>
@@ -210,22 +212,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="" class="font-weight-bold ml-1" target="">uFood</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-              <li class="nav-item">
-                <a href="" class="nav-link" target="_blank">About Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      {{ View::make('admin.footer') }}
     </div>
   </div>
   <!-- uFood Scripts -->

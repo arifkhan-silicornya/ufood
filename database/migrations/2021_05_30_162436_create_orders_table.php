@@ -19,6 +19,7 @@ class CreateOrdersTable extends Migration
             $table->string('customer_name');
             $table->string('customer_address');
             $table->string('phoneNumber');
+            $table->string('session_id');
             $table->string('payment_type')->nullable();
             $table->integer('total_Price');
             $table->string('status')->default('pending');

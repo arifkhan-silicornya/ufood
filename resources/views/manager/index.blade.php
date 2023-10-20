@@ -71,30 +71,8 @@
     </div>
   </div>
   <!-- Footer -->
-  <footer class="py-5" id="footer-main">
-    <div class="container">
-      <div class="row align-items-center justify-content-xl-between">
-        <div class="col-xl-6">
-          <div class="copyright text-center text-xl-left text-muted">
-            &copy; 2021 <a href="{{ url('/') }}" class="font-weight-bold ml-1" >uFood</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- uFood Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-  <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/js-cookie/js.cookie.js') }}"></script>
-  <script src="{{ asset('vendor/jquery.scrollbar/jquery.scrollbar.min.js') }}"></script>
-  <script src="{{ asset('vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js') }}"></script>
-  <!-- Optional JS -->
-  <script src="{{ asset('vendor/chart.js/dist/Chart.min.js') }}"></script>
-  <script src="{{ asset('vendor/chart.js/dist/Chart.extension.js') }}"></script>
-  <!-- uFood JS -->
-  <script src="{{ asset('js/ufood.js?v=1.2.0') }}"></script>
+  {{ View::make('manager.footer') }}
+  
 </body>
 
 </html>

@@ -109,7 +109,7 @@
                         <img src="{{ asset('img/products/'.$row->pro_img_name.'')}}" alt="image" class="img-thumbnail img-fluid" style="width: 70px!important;">
                       </td>
                       <td class="budget">
-                        {{ $row->pro_price }} Tk
+                        {{ $row->pro_price }} ZL
                       </td>
                       <td class="budget">
                         {{ $row->pro_category }}
@@ -167,22 +167,7 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2021 <a href="" class="font-weight-bold ml-1" target="">ufood</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-              <li class="nav-item">
-                <a href="" class="nav-link" target="">About </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      {{ View::make('admin.footer') }}
     </div>
   </div>
   <!-- uFood Scripts -->

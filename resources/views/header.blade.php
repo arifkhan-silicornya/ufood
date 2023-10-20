@@ -48,8 +48,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link d-flex text-light font-weight-bold my-auto ml-2 mr-4" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <h6>
-                  <i style="font-size: 1.4rem;" class="fas fa-shopping-cart"></i>
-                  <span style="font-size: 0.8rem;" class="badge badge-pill badge-dark text-white">{{ $count }}</span>
+                  <!-- <i style="font-size: 1.4rem;" class="fas fa-shopping-cart"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle><path d="m14 13.99 4-5h-3v-4h-2v4h-3l4 5z"></path><path d="M17.31 15h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14z"></path></svg>
+                  <span style="font-size: 0.9rem;" class="badge badge-pill border text-white">{{ $count }}</span>
                 </h6>
             </a>
 @if ($count > 0)
@@ -77,7 +78,7 @@ $totalPrice = $item->quantity*$products->pro_price;
                 </div>
                 <div class="col">
                     <p class="mb-0">{{ $products->pro_name }}</p>
-                    <span>{{ $item->quantity }} x {{ $products->pro_price }} tk = {{ $totalPrice }} tk</span>
+                    <span>{{ $item->quantity }} x {{ $products->pro_price }} ZL = {{ $totalPrice }} ZL</span>
                 </div>
                 <div class="col-auto">
                   <a href="{{ url('/removeFromCart?pID='.$products->id) }}">Remove</a>
@@ -96,7 +97,7 @@ $totalPrice = $item->quantity*$products->pro_price;
         <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
             @if (session()->has(md5('ufoodUser')))
             <li class="nav-item dropdown">
-            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link pr-0 " href="#" role="button" id="dropdownMenuButton1"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
 @php
@@ -110,7 +111,7 @@ $totalPrice = $item->quantity*$products->pro_price;
                 </div>
               </div>
             </a>
-            <div class="dropdown-menu  dropdown-menu-right ">
+            <div class="dropdown-menu  dropdown-menu-right " id="dropdownMenuLink1">
               <div class="dropdown-header noti-title">
                 <h6 class="text-overflow m-0">Welcome!</h6>
               </div>
@@ -122,9 +123,9 @@ $totalPrice = $item->quantity*$products->pro_price;
                   @endphp
                 @endif
                   @if (session()->has(md5('ufoodUser')))
-                        <h5 class="text-overflow m-0 text-danger">Balance - {{ $user_account->current_money }} tk</h6>
+                        <h5 class="text-overflow m-0 text-danger">Balance - {{ $user_account->current_money }} ZL</h6>
                   @else
-                        <h5 class="text-overflow m-0 text-danger">Balance - 0 tk</h6>
+                        <h5 class="text-overflow m-0 text-danger">Balance - 0 ZL</h6>
                   @endif
 
 

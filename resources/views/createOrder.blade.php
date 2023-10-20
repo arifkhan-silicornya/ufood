@@ -23,6 +23,12 @@
         {{ View::make('header') }}
     </div>
     <div class="container-fluid mt-5">
+    @if(session()->has('error'))
+            <div class="alert alert-block {{session('alert')}}">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>{{ session('error') }}</strong>
+            </div>
+            @endif
     @foreach ($users as $item)
     @if (Session::get(md5('ufoodUser'))['studentid']  == $item->studentid  )
     <form action="{{ url('/orderCreate') }}" method="post">
@@ -74,7 +80,7 @@
                     </div>
 
                 <a href="{{ url('/') }}" class="btn btn-outline-primary px-7 my-3"><i class="far fa-hand-point-left mx-3"></i>Go Back</a>
-                <button type="submit" class="btn btn-outline-danger px-8 my-3" disabled id="submit">Save Info</button>
+                <button type="submit" class="btn btn-outline-danger px-8 my-3" id="submit">Save Info</button>
             </div>
 
     </form>
